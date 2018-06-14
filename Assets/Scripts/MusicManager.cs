@@ -6,7 +6,7 @@ public class MusicManager : MonoBehaviour
 {
     static MusicManager instance;
 
-    void Start()
+    private void Awake()
     {
         if (instance)
         {
@@ -19,8 +19,11 @@ public class MusicManager : MonoBehaviour
         }
     }
 
+    void Start()
+    {
+    }
+
     void Update()
     {
-
     }
 }
